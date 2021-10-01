@@ -1,0 +1,10 @@
+@import "variables";
+@import "globals";
+@import "header";
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
+
+
