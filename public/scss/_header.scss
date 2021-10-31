@@ -1,24 +1,18 @@
-.header {
-    
-    nav {
-        padding: 24px;
-    }
-
-    &__logo {
-
-    }
-
-    &__menu {
-        //Mobile menu
-        > span {
-            display: block;
-            width: 25px;
-            height: 2px;
-            background-color: white;
-
-            &:not(:last-child) {
-                margin-bottom: 3px;
-            }
-        }
-    }
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
 }

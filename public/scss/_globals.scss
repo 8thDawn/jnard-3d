@@ -1,36 +1,29 @@
-*  {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: $primary-color;
-    color: $font-color;
+
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
 }
 
-main {
-    width: 100%;
-    font-weight: weight(regular);
-    margin: 0 auto;
-}
 
-a, a:visited, a:hover {
-    text-decoration: none;
-}
-
-.flex {
-    display: flex;
-
-    &-jc-sb {
-        justify-content: space-between;
-    }
-
-    &-jc-c {
-        justify-content: center;
-    }
-
-    &-ai-c {
-        align-items: center;
-    }
-}
